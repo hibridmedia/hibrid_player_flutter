@@ -79,7 +79,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body:   AspectRatio(
         aspectRatio:16/9 ,
-        child: ImaPlayerView(
+        child: HibridPlayer(
             "MvbyQ6F4Lr2s3FU6ZMgHT92stjkFg8qeNLJwF5FJh5tJauQennNFjyaUQywdrwGR",
             "rotana-cinema"),
       ),

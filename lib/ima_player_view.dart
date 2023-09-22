@@ -5,10 +5,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 
-class ImaPlayerView extends StatelessWidget {
+class HibridPlayer extends StatelessWidget {
   final String license;
   final String channelKey;
-  const ImaPlayerView(this.license, this.channelKey);
+  const HibridPlayer(this.license, this.channelKey, {super.key});
 
   @override
   Widget build(BuildContext context) {
