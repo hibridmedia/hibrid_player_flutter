@@ -23,6 +23,6 @@ internal class NativeView(
     init {
         var channelKey = args["channelKey"].toString()
         var license = args["license"].toString()
-        textView = HibridPlayerView(context,channelKey = channelKey,license = license)
+        textView = HibridPlayerView(context, channelKey = channelKey, license = license)
     }
 }

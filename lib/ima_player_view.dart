@@ -6,11 +6,13 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 
 class ImaPlayerView extends StatelessWidget {
-  const ImaPlayerView();
+  final String license;
+  final String channelKey;
+  const ImaPlayerView(this.license, this.channelKey);
 
   @override
   Widget build(BuildContext context) {
-    const viewType = 'ssss';
+    const viewType = 'HybridPlayer';
 
     final gestureRecognizers = <Factory<OneSequenceGestureRecognizer>>{
       Factory<OneSequenceGestureRecognizer>(
@@ -26,7 +28,7 @@ class ImaPlayerView extends StatelessWidget {
             id: params.id,
             viewType: viewType,
             layoutDirection: TextDirection.ltr,
-            creationParams: {"license": "MvbyQ6F4Lr2s3FU6ZMgHT92stjkFg8qeNLJwF5FJh5tJauQennNFjyaUQywdrwGR", "channelKey": "rotana-drama"},
+            creationParams: {"license": license, "channelKey": channelKey},
             creationParamsCodec: const StandardMessageCodec(),
             onFocus: () => params.onFocusChanged(true),
           )
