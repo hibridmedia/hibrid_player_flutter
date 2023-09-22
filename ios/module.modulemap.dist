@@ -1,0 +1,14 @@
+{
+    module GoogleAnalytics 
+    header "GAI.h"
+    header "GAIDictionaryBuilder.h"
+    header "GAIEcommerceFields.h"
+    header "GAIEcommerceProduct.h"
+    header "GAIEcommerceProductAction.h"
+    header "GAIEcommercePromotion.h"
+    header "GAIFields.h"
+    header "GAILogger.h"
+    header "GAITrackedViewController.h"
+    header "GAITracker.h"
+    export \*
+  }

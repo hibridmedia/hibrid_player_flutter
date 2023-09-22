@@ -8,6 +8,16 @@ import Flutter
     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
   ) -> Bool {
     GeneratedPluginRegistrant.register(with: self)
+      
+      weak var registrar = self.registrar(forPlugin: "plugin-name")
+
+              let factory = FLNativeViewFactory(messenger: registrar!.messenger())
+              self.registrar(forPlugin: "HybridPlayerView")!.register(
+                  factory,
+                  withId: "HybridPlayer")
+      
+      
+      
     return super.application(application, didFinishLaunchingWithOptions: launchOptions)
   }
 }

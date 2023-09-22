@@ -1,0 +1,24 @@
+PODS:
+  - GoogleAds-IMA-iOS-SDK (3.12.1)
+  - GoogleAnalytics (3.21.0)
+  - HibridPlayerIOS (0.0.3):
+    - GoogleAds-IMA-iOS-SDK (~> 3.12.0)
+    - GoogleAnalytics
+
+DEPENDENCIES:
+  - HibridPlayerIOS
+
+SPEC REPOS:
+  trunk:
+    - GoogleAds-IMA-iOS-SDK
+    - GoogleAnalytics
+    - HibridPlayerIOS
+
+SPEC CHECKSUMS:
+  GoogleAds-IMA-iOS-SDK: 3c01b8db7d01de6b4a3b1d58744d4bc426a2d821
+  GoogleAnalytics: abbea91ce20faea66c5b2305aa040d3f9992f66a
+  HibridPlayerIOS: 17a66aa6a9a4bb51966348ab68a11521461beab2
+
+PODFILE CHECKSUM: d5a5ef319b946cf4a48581d6fb1a2fa5b09bfc65
+
+COCOAPODS: 1.12.1

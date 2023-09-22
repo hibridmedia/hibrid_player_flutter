@@ -48,7 +48,7 @@ class HibridPlayer extends StatelessWidget {
     } else {
       return UiKitView(
         viewType: viewType,
-        creationParams: {},
+        creationParams: {"license": license, "channelKey": channelKey},
         gestureRecognizers: gestureRecognizers,
         creationParamsCodec: const StandardMessageCodec(),
         onPlatformViewCreated: (id) {},
